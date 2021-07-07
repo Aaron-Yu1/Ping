@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IP_LIST="
-15.83.246.27"
+10.10.10.65"
 
 read -p "Please input password: " PASSWORD
 
