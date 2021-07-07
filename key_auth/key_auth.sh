@@ -1,7 +1,12 @@
 #!/bin/bash
 
 IP_LIST="
-10.10.10.65"
+10.10.10.31
+10.10.10.32
+10.10.10.33
+10.10.10.41
+10.10.10.42
+10.10.10.43"
 
 read -p "Please input password: " PASSWORD
 
@@ -10,7 +15,7 @@ rpm -q sshpass &> /dev/null
 if [ $? -eq 0 ]; then
     echo "The sshpass has been installed."
 else
-    apt install -y sshpass &> /dev/null
+    yum install -y sshpass &> /dev/null
     if [ $? -eq 0 ]; then
         echo "The sshpass install is complated."
     else
